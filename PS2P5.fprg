@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="steve"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-01 10:41:26 pm"/>
+        <attribute name="created" value="c3RldmU7U1RFVkVOTEFQVE9QOzIwMjMtMTAtMDE7MTA6MzE6MDkgcG07MjgxNQ=="/>
+        <attribute name="edited" value="c3RldmU7U1RFVkVOTEFQVE9QOzIwMjMtMTAtMDE7MTA6NDE6MjYgcG07MTsyOTIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="discountpercent" type="Real" array="False" size=""/>
+            <declare name="unitprice" type="Real" array="False" size=""/>
+            <declare name="discountamount" type="Real" array="False" size=""/>
+            <declare name="discountedunitprice" type="Real" array="False" size=""/>
+            <input variable="discountpercent"/>
+            <input variable="unitprice"/>
+            <assign variable="discountamount" expression="(discountpercent/100)*unitprice"/>
+            <assign variable="discountedunitprice" expression="unitprice-discountamount"/>
+            <output expression="&quot;The discounted amount off the item will be $&quot; &amp;discountamount" newline="True"/>
+            <output expression="&quot;And the new price will be $&quot; &amp;discountedunitprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
